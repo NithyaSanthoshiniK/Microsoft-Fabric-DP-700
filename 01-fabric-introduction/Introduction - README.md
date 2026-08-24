@@ -128,7 +128,9 @@ Data arrives → processed immediately, continuously
 ---
 
 ## 5. Microsoft Fabric Architecture
- ![Architecture Diagram]([https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview/onelake-architecture.png])
+<p align="center">
+  <img src="https://learn.microsoft.com/en-us/fabric/fundamentals/media/microsoft-fabric-overview/onelake-architecture.png" alt="OneLake Architecture" width="600"/>
+</p>
 
 **One Lake** is the foundation — a **single centralized storage layer** for the entire organization (essentially the same concept as Azure Data Lake Storage, renamed/unified under Fabric).
 
