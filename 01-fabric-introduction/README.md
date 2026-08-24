@@ -112,7 +112,7 @@ It provides a centralized location for organizational data and is shared across 
                        │
        ┌───────────────┼───────────────┐
        ↓               ↓               ↓
-   Lakehouse       Warehouse       Other Data
+    Lakehouse       Warehouse       Other Data
        │
        ↓
     Spark / SQL
@@ -129,7 +129,7 @@ Data Warehouse
 It supports both Spark and SQL workloads and uses Delta Lake for table storage.
 
 Lakehouse Architecture
-                Lakehouse
+               Lakehouse
                     │
         ┌───────────┴───────────┐
         ↓                       ↓
