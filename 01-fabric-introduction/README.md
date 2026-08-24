@@ -5,8 +5,6 @@
 **Course:** Microsoft Fabric Full Course for Beginners  
 **Topic:** Introduction to Data Engineering | ETL vs ELT
 
-🎥 [YouTube Video](https://youtu.be/Ggs4iN6zdEs)
-
 ---
 
 ## 🎯 Learning Objectives
