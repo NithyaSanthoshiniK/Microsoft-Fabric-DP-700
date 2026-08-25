@@ -20,10 +20,9 @@ Notes from the third session of the Azure Data Engineer / Microsoft Fabric cours
 - A lakehouse can store both **unstructured data** (via the Files section) and **structured data** (via schemas/tables).
 - Covered: creating a Fabric account, portal tour, workspace roles, creating a lakehouse, and building a first pipeline to copy files between folders.
 
-## Lakehouse Architecture
+## Lakehouse Deep dive
 <img width="2752" height="1536" alt="Cloud_Lakehouse_Architecture_and_Power" src="https://github.com/user-attachments/assets/9c016365-7120-4ea7-9823-0f725b107194" />
 
-<img width="1200" height="630" alt="Lakehouse" src="https://github.com/user-attachments/assets/0d53a089-e678-47c5-aa98-ed17b6f05a0c" />
 
 ## Lakehouse Architecture: Files vs Tables
 Everything in a lakehouse — whether stored as a file or a table — physically lives in **OneLake**. A lakehouse is essentially a folder inside OneLake, and within it:
@@ -99,6 +98,9 @@ Illustrated with a bank-transfer example (₹1,000 → transferring ₹500 to a 
 10. Demonstrated that **DML statements (UPDATE/DELETE) are not supported** against lakehouse tables via the SQL endpoint — attempting an `UPDATE` or `DELETE` returns an error, since the endpoint is read-only. (Warehouse tables, covered next session, do support full read/write.)
 
 ## Lakehouse vs Warehouse (Preview)
+
+<img width="1200" height="630" alt="Lakehouse" src="https://github.com/user-attachments/assets/0d53a089-e678-47c5-aa98-ed17b6f05a0c" />
+
 Briefly flagged as a key difference to be covered in the next session: lakehouse tables are **read-only** via the SQL endpoint, while **warehouse tables support full CRUD** (read and write) operations.
 
 ## Assignment
