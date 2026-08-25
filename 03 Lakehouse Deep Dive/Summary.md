@@ -20,6 +20,8 @@ Notes from the third session of the Azure Data Engineer / Microsoft Fabric cours
 - A lakehouse can store both **unstructured data** (via the Files section) and **structured data** (via schemas/tables).
 - Covered: creating a Fabric account, portal tour, workspace roles, creating a lakehouse, and building a first pipeline to copy files between folders.
 
+## Lakehouse Architecture
+<img width="2752" height="1536" alt="Cloud_Lakehouse_Architecture_and_Power" src="https://github.com/user-attachments/assets/9c016365-7120-4ea7-9823-0f725b107194" />
 
 <img width="1200" height="630" alt="Lakehouse" src="https://github.com/user-attachments/assets/0d53a089-e678-47c5-aa98-ed17b6f05a0c" />
 
@@ -28,11 +30,12 @@ Everything in a lakehouse — whether stored as a file or a table — physically
 - **Files** subfolder → raw data in any format (CSV, JSON, Parquet, logs, images, audio, video)
 - **Tables** subfolder → structured data stored in **Delta format**
 
+<img width="627" height="580" alt="Screenshot 2026-08-25 at 3 40 19 PM" src="https://github.com/user-attachments/assets/ae15241c-3ee0-4d84-b1d1-6485b67ff41e" />
+
 Tables are not created independently — they're built **from** files. Once created, a table's underlying data is automatically converted to Parquet + a Delta transaction log.
 
 This data can be accessed by Spark notebooks, pipelines, Power BI, SQL analytics, and Synapse — all reading from the same underlying OneLake storage.
 
-<img width="2752" height="1536" alt="Cloud_Lakehouse_Architecture_and_Power" src="https://github.com/user-attachments/assets/9c016365-7120-4ea7-9823-0f725b107194" />
 
 ## Files vs Tables — Key Differences
 
